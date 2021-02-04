@@ -3495,7 +3495,7 @@
     	return child_ctx;
     }
 
-    // (162:4) {#each $Items as item, i}
+    // (163:4) {#each $Items as item, i}
     function create_each_block(ctx) {
     	let li;
     	let new_po_item;
@@ -3507,8 +3507,8 @@
     			new_po_item = element("new-po-item");
     			set_custom_element_data(new_po_item, "item", new_po_item_item_value = /*item*/ ctx[19]);
     			set_custom_element_data(new_po_item, "color", /*itemColors*/ ctx[6][/*i*/ ctx[21] % /*itemColors*/ ctx[6].length]);
-    			add_location(new_po_item, file$1, 163, 8, 3161);
-    			add_location(li, file$1, 162, 6, 3147);
+    			add_location(new_po_item, file$1, 164, 8, 3178);
+    			add_location(li, file$1, 163, 6, 3164);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -3528,7 +3528,7 @@
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(162:4) {#each $Items as item, i}",
+    		source: "(163:4) {#each $Items as item, i}",
     		ctx
     	});
 
@@ -3625,39 +3625,39 @@
     			button1.textContent = "submit";
     			this.c = noop;
     			attr_dev(h1, "id", "title");
-    			add_location(h1, file$1, 136, 0, 2508);
-    			add_location(div0, file$1, 142, 8, 2614);
+    			add_location(h1, file$1, 137, 0, 2525);
+    			add_location(div0, file$1, 143, 8, 2631);
     			attr_dev(input0, "type", "text");
-    			add_location(input0, file$1, 143, 8, 2639);
-    			add_location(label0, file$1, 141, 6, 2597);
-    			add_location(li0, file$1, 140, 4, 2585);
+    			add_location(input0, file$1, 144, 8, 2656);
+    			add_location(label0, file$1, 142, 6, 2614);
+    			add_location(li0, file$1, 141, 4, 2602);
     			attr_dev(label1, "for", "customer-auto-complete");
-    			add_location(label1, file$1, 148, 6, 2732);
+    			add_location(label1, file$1, 149, 6, 2749);
     			attr_dev(input1, "type", "text");
     			attr_dev(input1, "id", "customer-auto-complete");
-    			add_location(input1, file$1, 150, 8, 2840);
+    			add_location(input1, file$1, 151, 8, 2857);
     			set_custom_element_data(jt_autocomplete, "items", /*customerList*/ ctx[5]);
-    			add_location(jt_autocomplete, file$1, 149, 6, 2792);
-    			add_location(li1, file$1, 147, 4, 2720);
-    			add_location(div1, file$1, 156, 8, 2984);
+    			add_location(jt_autocomplete, file$1, 150, 6, 2809);
+    			add_location(li1, file$1, 148, 4, 2737);
+    			add_location(div1, file$1, 157, 8, 3001);
     			attr_dev(input2, "type", "date");
     			input2.required = true;
-    			add_location(input2, file$1, 157, 8, 3013);
-    			add_location(label2, file$1, 155, 6, 2967);
-    			add_location(li2, file$1, 154, 4, 2955);
+    			add_location(input2, file$1, 158, 8, 3030);
+    			add_location(label2, file$1, 156, 6, 2984);
+    			add_location(li2, file$1, 155, 4, 2972);
     			attr_dev(button0, "type", "button");
     			attr_dev(button0, "id", "add-item-button");
-    			add_location(button0, file$1, 168, 6, 3268);
-    			add_location(li3, file$1, 167, 4, 3256);
+    			add_location(button0, file$1, 169, 6, 3285);
+    			add_location(li3, file$1, 168, 4, 3273);
     			attr_dev(input3, "type", "checkbox");
-    			add_location(input3, file$1, 173, 8, 3401);
-    			add_location(label3, file$1, 172, 6, 3384);
-    			add_location(li4, file$1, 171, 4, 3372);
-    			add_location(ul, file$1, 139, 2, 2575);
+    			add_location(input3, file$1, 174, 8, 3418);
+    			add_location(label3, file$1, 173, 6, 3401);
+    			add_location(li4, file$1, 172, 4, 3389);
+    			add_location(ul, file$1, 140, 2, 2592);
     			attr_dev(button1, "type", "submit");
     			attr_dev(button1, "id", "submit");
-    			add_location(button1, file$1, 178, 2, 3507);
-    			add_location(form, file$1, 138, 0, 2538);
+    			add_location(button1, file$1, 179, 2, 3524);
+    			add_location(form, file$1, 139, 0, 2555);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -3956,7 +3956,7 @@
     		super();
 
     		this.shadowRoot.innerHTML = `<style>#title{background-color:#283e61;color:#DDD;text-align:center}label{display:block;font-family:Arial, Helvetica, sans-serif}#submit{font-size:1.5em;height:60px;width:120px;background-color:#283e61;color:#DDD;transition:0.3s}#submit:hover{background-color:#34578f}#submit:active{background-color:#1f304b
-  }#add-item-button{display:block;margin:0 auto;width:80%}form{display:flex;flex-direction:column;align-items:center}ul{list-style-type:none}li{padding:10px 5px}</style>`;
+  }#add-item-button{display:block;margin:0 auto;width:80%}form{display:flex;flex-direction:column;align-items:center}ul{list-style-type:none;padding:0}li{padding:10px 5px}</style>`;
 
     		init(
     			this,
